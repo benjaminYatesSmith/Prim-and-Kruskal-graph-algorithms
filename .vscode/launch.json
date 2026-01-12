@@ -1,0 +1,19 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": " >> LE DÉBOGUEUR QUI VA BIEN <<",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${fileDirname}/${fileBasenameNoExtension}",
+			"args": [ "-g", "-v" ],
+			"stopAtEntry": false,
+			"cwd": "${fileDirname}",
+			"externalConsole": false,
+			"MIMode": "gdb",
+			"miDebuggerArgs": "-nh -x ${workspaceFolder}/test/env.gdb",
+			"preLaunchTask": "build-all"
+			}
+		]
+}
+
